@@ -9,9 +9,12 @@ struct rectangle
 }r;
 int main()
 {
+    int area;
     r.length = 10;
     r.breadth = 15;
-    printf("AREA = %d",r.length*r.breadth);
-    return 0;
+    area = r.length*r.breadth;
+    printf("AREA = %d",area);
+    cout<<area;
+       return 0;
 }
 
