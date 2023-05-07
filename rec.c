@@ -10,11 +10,11 @@ int setlength(int l);
 void main()
 {
     printf("Enter the size of length and breadth\t");
-    scanf("%d%d",r.length,r.breadth);
+    scanf("%d%d",&r.length,&r.breadth);
     printf("AREA = %d\n",area(r));
-    printf("length = %d\n",getlenth());
+    printf("original length = %d\n",getlenth());
     setlength(2);
-    printf("length = %d\n",getlenth());
+    printf("modified length = %d\n",getlenth());
 }
 int area(struct rec r)
     {
