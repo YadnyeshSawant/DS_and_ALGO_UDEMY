@@ -203,6 +203,7 @@ void insert1()    // takes values one by one without asking for the number of no
     }
 }
 void search1()  //used to search any element in list 
+
 {
     int ele,flag=0;
     ptr= head;
@@ -215,7 +216,7 @@ void search1()  //used to search any element in list
             flag =1;
             break;
         }
-        else if(ptr->data >ele)
+        else if(ptr->data> ele)
         {
             flag =0;
             break;
@@ -234,3 +235,14 @@ void search1()  //used to search any element in list
         printf("\nElement Not Found\n");
     }
 }
+// int count1()
+// {
+//     ptr= head;
+//     int c=1;
+//     while (ptr!= NULL)
+//     {
+//         c++;
+//         ptr= ptr->next;
+//     }
+//     return(c);
+// }

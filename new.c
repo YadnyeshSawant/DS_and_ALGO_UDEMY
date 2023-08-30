@@ -2,6 +2,17 @@
 #include<stdlib.h>
 #include"linklist.h"
 void sort();
+int count()
+{
+    ptr= head;
+    int c=1;
+    while (ptr->next!= NULL)
+    {
+        c++;
+        ptr=ptr->next;
+    }
+    return c;
+}
 void main()
 {
 	int ch;
@@ -31,6 +42,7 @@ void sort()
 {
 	int i,j,n,k;
 	struct node *temp1,*temp2;
+	n = count();
  	for(i=n-2;i>=0;i--)
 	{
 		temp1=head;
